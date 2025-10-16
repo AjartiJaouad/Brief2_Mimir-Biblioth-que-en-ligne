@@ -1,36 +1,25 @@
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Georgia", serif;
-  flex-wrap: wrap;
 }
 
 body {
   background-color: #fdf6f3;
   color: #2c2c2c;
-  line-height: 1;
-  
+  line-height: 1.5;
 }
+
 
 header {
   background-color: #1f1f1f;
-  color: #fff;
+  color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-}
-
-.rd{
-  border-radius: 700px ;
-  background-color: #b09a9a;
-  width: 60px;
-  height: 60px;
-  margin-left: 31%;
-  margin-top: auto ;
-  z-index: -1;
- 
 }
 
 header div {
@@ -38,14 +27,6 @@ header div {
   font-weight: bold;
   font-style: italic;
   color: #c22;
-}
-
-#bn{
-  margin-left: 50%;
-  margin-top: 50px;
-  padding: 10px;
-  width: 25%;
-  background-color:#f3efed;
 }
 
 nav a {
@@ -58,29 +39,42 @@ nav a {
 nav a:hover {
   text-decoration: underline;
 }
-.from1{
-    padding: 10px;
-  background-color: rgb(255, 255, 255);
-  text-align: center;
 
+.book-section {
+  margin-bottom: 3rem;
+  display: z;
 }
-.articale-compet {
-  background-color: #ffffff;
-  flex-direction: column;
+
+.book-section h1 {
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #c22;
+  padding-bottom: 0.5rem;
+  color: #c22;
 }
-.classarticlef{
-  display: flex;
-  justify-content: center;
+
+
+.book-item:hover {
+  transform: scale(1.05);
 }
-.cover {
-  width: 250px ;
-  padding: 20px;
+
+.book-item img {
+  width: 100px;
+  height: auto;
+  border-radius: 5px;
+  flex-shrink: 0;
 }
-.arti{
-  padding: 10px;
-  background-color: rgb(229, 216, 216);
-  text-align: center;
+
+.book-info h2 {
+  font-size: 1.1rem;
+  color: #2c2c2c;
+  margin-bottom: 0.3rem;
 }
+
+.book-info h3 {
+  font-size: 0.9rem;
+  color: #444;
+}
+
 
 footer {
   background-color: #1f1f1f;
@@ -107,4 +101,31 @@ footer p {
 footer a {
   color: #ccc;
   text-decoration: none;
+}
+
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    margin: 0.5rem 0;
+  }
+
+  .book-list {
+    flex-direction: column;
+  }
+
+  .book-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .book-item img {
+    width: 100%;
+    max-width: 250px;
+    margin-bottom: 0.5rem;
+  }
 }

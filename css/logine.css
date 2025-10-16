@@ -1,36 +1,24 @@
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Georgia", serif;
-  flex-wrap: wrap;
 }
 
 body {
   background-color: #fdf6f3;
   color: #2c2c2c;
-  line-height: 1;
-  
+  line-height: 1.5;
 }
 
 header {
   background-color: #1f1f1f;
-  color: #fff;
+  color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-}
-
-.rd{
-  border-radius: 700px ;
-  background-color: #b09a9a;
-  width: 60px;
-  height: 60px;
-  margin-left: 31%;
-  margin-top: auto ;
-  z-index: -1;
- 
 }
 
 header div {
@@ -38,14 +26,6 @@ header div {
   font-weight: bold;
   font-style: italic;
   color: #c22;
-}
-
-#bn{
-  margin-left: 50%;
-  margin-top: 50px;
-  padding: 10px;
-  width: 25%;
-  background-color:#f3efed;
 }
 
 nav a {
@@ -57,29 +37,6 @@ nav a {
 
 nav a:hover {
   text-decoration: underline;
-}
-.from1{
-    padding: 10px;
-  background-color: rgb(255, 255, 255);
-  text-align: center;
-
-}
-.articale-compet {
-  background-color: #ffffff;
-  flex-direction: column;
-}
-.classarticlef{
-  display: flex;
-  justify-content: center;
-}
-.cover {
-  width: 250px ;
-  padding: 20px;
-}
-.arti{
-  padding: 10px;
-  background-color: rgb(229, 216, 216);
-  text-align: center;
 }
 
 footer {
