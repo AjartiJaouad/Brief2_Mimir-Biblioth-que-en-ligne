@@ -1,0 +1,171 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Georgia", serif;
+}
+
+body {
+  background-color: #fdf6f3;
+  color: #2c2c2c;
+  line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header, .nav {
+  background-color: #1f1f1f;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.brand {
+  font-size: 2rem;
+  font-weight: bold;
+  font-style: italic;
+  color: #c22;
+}
+
+.nav a {
+  margin-left: 1.5rem;
+  color: #cd0808;
+  text-decoration: none;
+  font-weight: 500;
+}
+nav a:hover {
+  color: #ffcc00;
+}
+
+h1 {
+  text-align: center;
+  color: #c22;
+  margin-top: 2rem;
+}
+
+form {
+  background-color: #e5d8d8;
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(44, 44, 44, 0.2);
+}
+
+form div {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+input[type="checkbox"] {
+  margin-right: 0.4rem;
+}
+
+button {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #c22;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #a00;
+}
+
+form div:nth-child(7) {
+  text-align: center;
+  color: #444;
+  font-weight: bold;
+}
+
+form button[type="button"] {
+  background-color: #1f1f1f;
+  color: #fff;
+  margin-top: 0.5rem;
+}
+
+form button[type="button"]:hover {
+  background-color: #333;
+}
+
+form div:last-child {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+form div:last-child a {
+  color: #c22;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+form div:last-child a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  margin-top: auto;
+  background-color: #1f1f1f;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+footer h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+footer h4 {
+  font-weight: normal;
+  margin-bottom: 0.5rem;
+}
+
+footer p {
+  margin: 0.3rem 0;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav a {
+    margin: 0.5rem 0;
+  }
+
+  form {
+    width: 90%;
+  }
+}
+header{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}

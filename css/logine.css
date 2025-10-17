@@ -1,55 +1,142 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Georgia", serif;
+  font-family: Georgia, serif;
 }
 
 body {
   background-color: #fdf6f3;
   color: #2c2c2c;
-  line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
-  background-color: #1f1f1f;
+  background: #1f1f1f;
   color: white;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 1rem 2rem;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-header div {
-  font-size: 2rem;
+.logo {
+  font-size: 1.8rem;
   font-weight: bold;
   font-style: italic;
   color: #c22;
 }
 
 nav a {
-  margin-left: 1.5rem;
+  margin-left: 1rem;
   color: #cd0808;
   text-decoration: none;
-  font-weight: 500;
 }
 
 nav a:hover {
+  color: #ffcc00;
+}
+
+h1 {
+  text-align: center;
+  color: #c22;
+  margin: 2rem 0 1rem;
+}
+
+.subtitle {
+  text-align: center;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+form {
+  background: #e5d8d8;
+  max-width: 400px;
+  margin: auto;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+form label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+form input[type="email"],
+form input[type="password"] {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+.password-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.password-row a {
+  color: #c22;
+  text-decoration: none;
+}
+
+.password-row a:hover {
+  text-decoration: underline;
+}
+
+button {
+  width: 100%;
+  padding: 0.7rem;
+  border: none;
+  background: #c22;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+
+button:hover {
+  background: #a00;
+}
+
+form button[type="button"] {
+  background: #1f1f1f;
+}
+
+form button[type="button"]:hover {
+  background: #333;
+}
+
+form a[href="SinUP.html"] {
+  display: block;
+  text-align: center;
+  color: #c22;
+  font-weight: bold;
+  margin-top: 1rem;
+  text-decoration: none;
+}
+
+form a:hover {
   text-decoration: underline;
 }
 
 footer {
-  background-color: #1f1f1f;
+  background: #1f1f1f;
   color: white;
   text-align: center;
-  padding: 2rem 1rem;
-  margin-top: 4rem;
+  padding: 1.5rem;
+  margin-top: auto;
 }
 
 footer h2 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
 }
 
 footer h4 {
@@ -61,7 +148,24 @@ footer p {
   margin: 0.3rem 0;
 }
 
-footer a {
-  color: #ccc;
-  text-decoration: none;
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav a {
+    margin: 0.5rem 0;
+    display: block;
+  }
+
+  form {
+    width: 90%;
+  }
+}
+header{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
 }
